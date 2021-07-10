@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Dog Findr</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><img style="width:45px; height:45px; margin-right:10px; border-radius: 50%;" src="img/loading.svg"><span>Dog</span> Findr</h1>
+        <h3 class="subtitle">Get useful info about the breed of your dog</h3>
+        <form class="selectbox">
+            <select id="selectBox" >
+                <option>Select a breed</option>
+            </select>
+            <h3>OR</h3>
+            <input type="search" id="searchBox" name="search" placeholder="What Breed Would You Like to Find ?">
+            <button id="search-btn">Search</button>
+            <div class="auto-suggest">
+            </div>
+        </form>
+        <div class="overlay"></div>
+    </div>
+
+    
+    <div class="display">
+       
+        <div class="breed-details flex-child">
+            <div class="breed">
+                <div class="dog-img">
+                    
+                </div>
+                <ul class="desc">
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="isloading"></div> -->
+        <div class="random-result  flex-child">
+            
+            <h2 id="display-header">This is a Random Dog Search</h2>
+
+            <div class="randomImg row">
+
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

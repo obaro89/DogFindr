@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  </head>
+
+  <body>
+    <button onclick='execute()'>Next Image</button>
+    <div>
+      <img src='https://bocageanimalhospital.com/wp-content/uploads/2020/09/iconfinder_1F431-cat-face_4888130.png' />
+    </div>
+  </body>
+  <script>
+    const images = [
+      'https://bocageanimalhospital.com/wp-content/uploads/2020/09/iconfinder_1F431-cat-face_4888130.png',
+      'https://catdoctorofmonroe.com/wp-content/uploads/2020/09/iconfinder_1F408-cat-B_4888072.png',
+      'https://aux.iconspalace.com/uploads/cat-clean-icon-256.png'
+    ]
+    let no = 0
+    function execute() {
+      let imageEl = document.querySelector('img').src
+     no++
+     document.querySelector('img').src = images[no]
+      if(no == images.length -1){
+        no = -1
+      }
+      
+   
+    }
+
+  </script>
+
+</html>
+          
